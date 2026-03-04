@@ -1,0 +1,6 @@
+Group: BusTrust
+Authors: Livia Fingerson and Pedro Lacombe Farina
+Date: March 3rd, 2026
+
+MWAA Environment: fingerson-lacombefarina-mwaa
+S3 Bucket: fingerson-lacombefarina-mwaa
