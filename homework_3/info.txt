@@ -1,3 +1,6 @@
+## Quick Note on Recommendations
+We set the 40 hour run going before receiving feedback on HW2, so we make recommendations according to what we used on the previous assignment. 
+
 Group: BusTrust
 Authors: Livia Fingerson and Pedro Lacombe Farina
 Date: March 3rd, 2026

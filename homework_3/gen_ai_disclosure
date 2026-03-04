@@ -1,0 +1,39 @@
+## Quick Note on Recommendations
+
+We set the 40 hour run going before receiving feedback on HW2, so we make recommendations according to what we used on the previous assignment. 
+
+
+## AI Usage Disclosure
+
+### (1) Tool(s) Used
+- OpenAI ChatGPT
+
+### (2) Prompts
+
+Prompts used during development:
+
+- Why is my dag failing when importing packages (numpy, boto3, torch)
+- How do I normalize embeddings using numpy instead of torch?
+- Why is my dag failing inside `load_movies()` with a 404 error?
+- What does 404 HeadObject error mean when calling `s3.download_file`?
+- Given the following python scripts, please generate a structure for a readme.md file
+
+---
+
+### (3) What We Changed
+
+- Removed all `torch` imports to prevent failures in MWAA.
+- Replaced `.pt` embeddings with `.npy` and converted recommendation logic to pure numpy to avoid runtime torch installation
+- Fixed S3 key paths to match the actual bucket structure.
+- Added missing s3 = boto3.client initialization
+- Made changes on the inconsistent writing from readme file
+
+---
+
+### (4) How We Tested
+
+- Confirmed embeddings loaded correctly from `full_embedding.npy`.
+- Ensured cumulative data size increased across DAG runs.
+- Checked that recommendation outputs were uploaded to the correct S3 directory.
+- Reviewed logs to confirm no 404 errors or runtime exceptions.
+- Reviewed readme file to check for inconsistencies.
