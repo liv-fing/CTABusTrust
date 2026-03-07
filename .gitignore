@@ -5,3 +5,4 @@ Datasets/stop_times.txt
 # ignore large datasets
 missing_data_imputation/bus_data_before_missing.csv
 missing_data_imputation/bus_data_after_missing.csv
+data/all_data_final.csv
